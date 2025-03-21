@@ -1,14 +1,5 @@
 {
-    "version": 2,
-    "build": {
-      "settings": {
-        "include": ["api/**/*"]
-      }
-    },
-    "routes": [
-      {
-        "src": "/api/users",
-        "dest": "/api/users"
-      }
-    ]
-  }
+    "version":2,
+    "build":[{"src": "./index.js","use":"@vercel/node"}],
+    "routes":[{"src":"/(.*)","dest":"/"}]
+}
